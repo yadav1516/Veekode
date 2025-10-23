@@ -1,158 +1,129 @@
-import './style.css'
-import ScrollReveal from 'scrollreveal'
+$(function() {
+    "use strict";
 
-// Initialize ScrollReveal
-const sr = ScrollReveal({
-    distance: '40px',
-    duration: 1000,
-    easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',
-    reset: false 
+    // Navbar sticky
+    $(window).on('scroll', function() {
+        if ($(window).scrollTop() > 50) {
+            $('.navbar').addClass('scrolled');
+            $('.nav-menu-container').addClass('scrolled');
+        } else {
+            $('.navbar').removeClass('scrolled');
+            $('.nav-menu-container').removeClass('scrolled');
+        }
+    });
+
+    // Smooth scroll for navigation links
+    $('a.nav-link').on('click', function(event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top - 70 // Adjust offset for fixed navbar
+            }, 800, function() {
+                window.location.hash = hash;
+            });
+        }
+    });
+
+    // Clients Slider
+    var clientsSlider = new Swiper(".clients-slider", {
+        slidesPerView: 2,
+        spaceBetween: 20,
+        loop: true,
+        speed: 5000,
+        autoplay: {
+            delay: 0,
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+            768: {
+                slidesPerView: 4,
+                spaceBetween: 40,
+            },
+            1024: {
+                slidesPerView: 6,
+                spaceBetween: 50,
+            },
+        },
+    });
+
+    // Work Slider
+    var workSlider = new Swiper(".work-slider", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+
+    // Mobile Work Slider
+    var mobileWorkSlider = new Swiper(".mobile-work-slider", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+
+    // Counter Up
+    $('.counter').counterUp({
+        delay: 10,
+        time: 1000
+    });
+
+    // Tilt.js for content blocks
+    $('.js-tilt').tilt({
+        glare: true,
+        maxGlare: .5
+    });
+    $('.js-tilt1').tilt({
+        glare: true,
+        maxGlare: .5
+    });
+
+    // Parallax effect for hero section
+    var b = document.getElementsByTagName("section")[0];
+    if (b) {
+        b.addEventListener("mousemove", function(event) {
+            parallaxed(event);
+        });
+    }
+
+    function parallaxed(e) {
+        var amountMovedX = (e.clientX * -0.3 / 8);
+        var amountMovedY = (e.clientY * -0.3 / 8);
+        var x = document.getElementsByClassName("parallaxed");
+        var i;
+        for (i = 0; i < x.length; i++) {
+            x[i].style.transform = 'translate(' + amountMovedX + 'px,' + amountMovedY + 'px)'
+        }
+    }
+
+    // Fixed button visibility on scroll
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 100) {
+            $('#fixButton').removeClass('hide').addClass('show');
+        } else {
+            $('#fixButton').removeClass('show').addClass('hide');
+        }
+    });
+
+    // Modal close button icon fix (using FontAwesome)
+    $('.exampleModal .btn-close').html('<i class="fa-solid fa-xmark"></i>');
 });
-
-// --- Hero Section Animations ---
-sr.reveal('.hero-title', {
-    origin: 'left',
-    delay: 200,
-    distance: '50px'
-});
-
-sr.reveal('.hero-subtitle', {
-    origin: 'left',
-    delay: 400,
-    distance: '30px'
-});
-
-sr.reveal('.hero-actions', {
-    origin: 'bottom',
-    delay: 600,
-    distance: '20px'
-});
-
-sr.reveal('.reveal-metric', {
-    scale: 0.8,
-    delay: 800
-});
-
-// --- General Section Reveals ---
-sr.reveal('.section-title', {
-    origin: 'top',
-    distance: '20px',
-    delay: 100
-});
-
-sr.reveal('.section-subtitle', {
-    origin: 'top',
-    distance: '20px',
-    delay: 200
-});
-
-// --- Card and Grid Reveals (Staggered) ---
-sr.reveal('.reveal-card', {
-    interval: 100,
-    origin: 'bottom',
-    distance: '30px',
-    scale: 0.98
-});
-
-// --- Metrics and Audience Lists ---
-sr.reveal('.metric-item', {
-    interval: 150,
-    origin: 'bottom',
-    distance: '20px'
-});
-
-sr.reveal('.audience-list', {
-    origin: 'top',
-    distance: '20px',
-    delay: 300
-});
-
-// --- Contact Form Reveal ---
-sr.reveal('.contact-form', {
-    origin: 'bottom',
-    distance: '40px',
-    delay: 300
-});
-
-sr.reveal('.alternate-contact', {
-    origin: 'bottom',
-    distance: '20px',
-    delay: 500
-});
-import './style.css'
-import ScrollReveal from 'scrollreveal'
-
-// Initialize ScrollRevead
-
-// --- Hero Section Animations ---
-sr.reveal('.hero-title', {
-    origin: 'left',
-    delay: 200,
-    distance: '50px'
-});
-
-sr.reveal('.hero-subtitle', {
-    origin: 'left',
-    delay: 400,
-    distance: '30px'
-});
-
-sr.reveal('.hero-actions', {
-    origin: 'bottom',
-    delay: 600,
-    distance: '20px'
-});
-
-sr.reveal('.reveal-metric', {
-    scale: 0.8,
-    delay: 800
-});
-
-// --- General Section Reveals ---
-sr.reveal('.section-title', {
-    origin: 'top',
-    distance: '20px',
-    delay: 100
-});
-
-sr.reveal('.section-subtitle', {
-    origin: 'top',
-    distance: '20px',
-    delay: 200
-});
-
-// --- Card and Grid Reveals (Staggered) ---
-sr.reveal('.reveal-card', {
-    interval: 100,
-    origin: 'bottom',
-    distance: '30px',
-    scale: 0.98
-});
-
-// --- Metrics and Audience Lists ---
-sr.reveal('.metric-item', {
-    interval: 150,
-    origin: 'bottom',
-    distance: '20px'
-});
-
-sr.reveal('.audience-list', {
-    origin: 'top',
-    distance: '20px',
-    delay: 300
-});
-
-// --- Contact Form Reveal ---
-sr.reveal('.contact-form', {
-    origin: 'bottom',
-    distance: '40px',
-    delay: 300
-});
-
-sr.reveal('.alternate-contact', {
-    origin: 'bottom',
-    distance: '20px',
-    delay: 500
-});
-
-// Extra '}' bracket removed from here

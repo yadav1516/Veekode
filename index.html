@@ -4,380 +4,780 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Veekode - Crafting Digital Experiences</title>
+    <meta name="description" content="Veekode is an award-winning website designing company, bringing your vision to life with innovative and impactful website designing." />
+    <meta name="keywords" content="website designing company, professional website designing, award winning website designing, web development, app development, UI/UX design, digital marketing" />
+    <meta name="author" content="Veekode">
+    <meta name="robots" content="index, follow">  
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.1/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Veekode - Custom Web & Software Solutions</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   </head>
   <body>
-    <div id="app">
-      <header class="main-header">
-        <nav class="navbar">
-          <div class="logo-group">
-            <img src="logo-removebg-preview.png" alt="Veekode Logo" class="logo-image">
-            <p class="tagline">Custom Software · Web Solutions · Digital Innovation</p>
-          </div>
-          
-          <ul class="nav-links">
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-
-          <div class="contact-links">
-            <a href="tel:+919876543210" aria-label="Call Us"><i class="fas fa-phone"></i></a>
-            <a href="mailto:hello@veekode.com" aria-label="Email Us"><i class="fas fa-envelope"></i></a>
-            <a href="https://wa.me/919876543210" target="_blank" aria-label="WhatsApp Us"><i class="fab fa-whatsapp"></i></a>
-            <a href="#contact" class="cta-button">Get Quote / Free Consult</a>
-          </div>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container nav-container">
+                <div class="nav-menu-container">
+                    <a class="navbar-brand ps-md-2" href="#" title="logo">
+                        <img src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/radiant-web-tech-logo-footer.svg" loading="lazy" alt="Veekode logo" class="brand-image">
+                    </a>
+               
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <img src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/menu.svg" loading="lazy" alt="menu" class="brand-image">
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                             <li class="nav-item">
+                                <a class="nav-link" href="#client">Clients</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#work">Our Work</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#awards">Awards</a>
+                            </li>
+                            
+                             <li class="nav-item">
+                                <a class="nav-link" href="#why">Why Us</a>
+                            </li>
+                            <li class="nav-item button d-md-block d-lg-block d-none">
+                                <a href="#" class="" data-bs-toggle="modal" data-bs-target="#exampleModal">Get a Quote</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </nav>
-      </header>
+    </header>
 
-      <main>
-        <section id="hero" class="hero-section">
-          <div class="hero-content">
-            <h1 class="hero-title reveal-text">
-              We build fast, scalable web solutions that convert visitors into <span class="highlight-growth">Success.</span>
-            </h1>
-            <p class="hero-subtitle reveal-text">
-              A dedicated custom software, web development, and digital innovation agency committed to leveraging technology to transform and elevate your business.
-            </p>
-            <div class="hero-actions reveal-text">
-              <a href="#contact" class="primary-cta">Get a Free Consult →</a>
-              <a href="#portfolio" class="secondary-cta">See Portfolio</a>
-            </div>
-          </div>
-          <div class="hero-visual">
-            <div class="metric-box reveal-metric">
-              <span class="metric-number">4k +</span>
-              <p class="metric-label">Projects completed successfully</p>
-            </div>
-          </div>
-        </section>
-
-        <section id="value-props" class="section value-props-section">
-          <div class="prop-grid">
-            <div class="prop-card reveal-card">
-              <i class="fas fa-tachometer-alt prop-icon"></i>
-              <h3>Fast Loading</h3>
-              <p>Speed is conversion. We guarantee sub-2 second load times for optimal user experience.</p>
-            </div>
-            <div class="prop-card reveal-card">
-              <i class="fas fa-chart-line prop-icon"></i>
-              <h3>Rank on Google</h3>
-              <p>Built-in SEO baseline ensures your site is indexed correctly and ready to climb search results.</p>
-            </div>
-            <div class="prop-card reveal-card">
-              <i class="fas fa-hands-helping prop-icon"></i>
-              <h3>Hands-off Maintenance</h3>
-              <p>We handle all updates, security, and backups so you can focus entirely on your business.</p>
-            </div>
-            <div class="prop-card reveal-card">
-              <i class="fas fa-share-alt prop-icon"></i>
-              <h3>Social Growth</h3>
-              <p>Seamless integration with social platforms to maximize sharing and audience engagement.</p>
-            </div>
-          </div>
-        </section>
-
-        <section id="services" class="section services-summary-section">
-          <h2 class="section-title reveal-text">Our Core Services</h2>
-          <p class="section-subtitle reveal-text">Solutions designed to drive measurable business outcomes.</p>
-          
-          <div class="service-grid">
-            <div class="service-card reveal-card">
-              <h3>Custom Websites</h3>
-              <p>Bespoke design and development tailored exactly to your brand and goals.</p>
-              <a href="#" class="learn-more">Learn more →</a>
-            </div>
-            <div class="service-card reveal-card">
-              <h3>SEO & Content</h3>
-              <p>Strategy and execution to ensure you dominate search engine rankings organically.</p>
-              <a href="#" class="learn-more">Learn more →</a>
-            </div>
-            <div class="service-card reveal-card">
-              <h3>Social Media Management</h3>
-              <p>Engaging content creation and platform management to build your community.</p>
-              <a href="#" class="learn-more">Learn more →</a>
-            </div>
-            <div class="service-card reveal-card">
-              <h3>E-commerce & Custom Apps</h3>
-              <p>High-converting online stores and custom applications built for maximum revenue.</p>
-              <a href="#" class="learn-more">Learn more →</a>
-            </div>
-          </div>
-        </section>
-
-        <section id="audience" class="section audience-section">
-          <h2 class="section-title reveal-text">Who We Help Succeed</h2>
-          <div class="audience-list reveal-text">
-            <ul>
-              <li><i class="fas fa-check-circle"></i> Local Shops & Restaurants</li>
-              <li><i class="fas fa-check-circle"></i> E-commerce Brands</li>
-              <li><i class="fas fa-check-circle"></i> Professional Services (Law, Finance)</li>
-              <li><i class="fas fa-check-circle"></i> Tech Startups & SaaS</li>
-            </ul>
-            <p class="audience-note">Helps visitors self-identify quickly and see immediate relevance.</p>
-          </div>
-        </section>
-
-        <section id="portfolio" class="section portfolio-section">
-          <h2 class="section-title reveal-text">Featured Projects</h2>
-          <p class="section-subtitle reveal-text">Real results from clients who trusted us with their digital future.</p>
-          
-          <div class="portfolio-grid">
-            <div class="project-card reveal-card">
-              <div class="thumbnail" style="background-image: url('https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');"></div>
-              <h4>Local Bakery Redesign</h4>
-              <p class="result-metric">+120% organic traffic in 3 months (SEO + redesign).</p>
-              <a href="#" class="case-study-link">View Case Study →</a>
-            </div>
-            <div class="project-card reveal-card">
-              <div class="thumbnail" style="background-image: url('https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');"></div>
-              <h4>E-commerce Funnel Optimization</h4>
-              <p class="result-metric">25% increase in average order value (AOV).</p>
-              <a href="#" class="case-study-link">View Case Study →</a>
-            </div>
-            <div class="project-card reveal-card">
-              <div class="thumbnail" style="background-image: url('https://images.pexels.com/photos/3861972/pexels-photo-3861972.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');"></div>
-              <h4>Startup SaaS Launch</h4>
-              <p class="result-metric">Achieved 500 sign-ups in the first week post-launch.</p>
-              <a href="#" class="case-study-link">View Case Study →</a>
-            </div>
-          </div>
-          <div class="text-center mt-4">
-            <a href="#" class="secondary-cta reveal-text">View All 20+ Projects</a>
-          </div>
-        </section>
-
-        <section id="process" class="section process-section">
-          <h2 class="section-title reveal-text">Our Transparent Process</h2>
-          <div class="process-steps">
-            <div class="step reveal-card">
-              <span class="step-number">1</span>
-              <h3>Free Consult & Strategy</h3>
-              <p>We discuss your goals, audience, and current challenges to define the scope.</p>
-            </div>
-            <div class="step reveal-card">
-              <span class="step-number">2</span>
-              <h3>Proposal & Contract</h3>
-              <p>A clear, fixed-price proposal and timeline (e.g., 7–10 days for starter sites).</p>
-            </div>
-            <div class="step reveal-card">
-              <span class="step-number">3</span>
-              <h3>Design & Build</h3>
-              <p>Rapid development, iterative feedback, and rigorous quality assurance testing.</p>
-            </div>
-            <div class="step reveal-card">
-              <span class="step-number">4</span>
-              <h3>SEO Baseline & Launch</h3>
-              <p>Final checks, SEO optimization, and seamless deployment to your domain.</p>
-            </div>
-            <div class="step reveal-card">
-              <span class="step-number">5</span>
-              <h3>Monthly Care</h3>
-              <p>Ongoing maintenance, security monitoring, and performance optimization.</p>
-            </div>
-          </div>
-        </section>
-
-        <section id="pricing" class="section pricing-section">
-          <h2 class="section-title reveal-text">Simple, Transparent Pricing</h2>
-          <p class="section-subtitle reveal-text">Choose a package that fits your current business stage.</p>
-          
-          <div class="pricing-grid">
-            <div class="price-card reveal-card">
-              <h3>Starter</h3>
-              <p class="price">₹9,999 <span class="small-text">+ hosting</span></p>
-              <p class="description">Perfect for local businesses needing a professional online presence quickly.</p>
-              <ul>
-                <li><i class="fas fa-check"></i> 5 Page Website</li>
-                <li><i class="fas fa-check"></i> Mobile Responsive Design</li>
-                <li><i class="fas fa-check"></i> Basic SEO Setup</li>
-                <li class="disabled"><i class="fas fa-times"></i> E-commerce Integration</li>
-              </ul>
-              <a href="#contact" class="primary-cta">Start Now</a>
-            </div>
-
-            <div class="price-card featured reveal-card">
-              <h3>Business</h3>
-              <p class="price">₹24,999 <span class="small-text">+ hosting</span></p>
-              <p class="description">Ideal for growing companies focused on lead generation and content marketing.</p>
-              <ul>
-                <li><i class="fas fa-check"></i> Up to 15 Pages</li>
-                <li><i class="fas fa-check"></i> Advanced SEO & Analytics</li>
-                <li><i class="fas fa-check"></i> Blog Setup & Training</li>
-                <li><i class="fas fa-check"></i> Priority Support</li>
-              </ul>
-              <a href="#contact" class="primary-cta">Get Started</a>
-            </div>
-
-            <div class="price-card reveal-card">
-              <h3>Growth</h3>
-              <p class="price">Custom Quote</p>
-              <p class="description">For complex projects, e-commerce, or custom software integrations.</p>
-              <ul>
-                <li><i class="fas fa-check"></i> Unlimited Pages</li>
-                <li><i class="fas fa-check"></i> Full E-commerce Funnel</li>
-                <li><i class="fas fa-check"></i> Dedicated Project Manager</li>
-                <li><i class="fas fa-check"></i> 6 Months Maintenance Included</li>
-              </ul>
-              <a href="#contact" class="primary-cta">Request Custom Quote</a>
-            </div>
-          </div>
-        </section>
-
-        <section id="testimonials" class="section testimonials-section">
-          <h2 class="section-title reveal-text">What Our Clients Say</h2>
-          <div class="testimonial-grid">
-            <blockquote class="testimonial-card reveal-card">
-              <p>"Veekode didn't just build a website; they built a lead generation machine. Our conversion rate doubled in the first month."</p>
-              <footer>
-                <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=60&h=60&dpr=2" alt="Client Photo">
-                <div>
-                  <cite>Ravi Sharma</cite>
-                  <p class="role">CEO, Tech Solutions</p>
-                </div>
-              </footer>
-            </blockquote>
-            <blockquote class="testimonial-card reveal-card">
-              <p>"The speed and attention to detail were incredible. The site looks professional and performs flawlessly on mobile."</p>
-              <footer>
-                <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=60&h=60&dpr=2" alt="Client Photo">
-                <div>
-                  <cite>Priya Singh</cite>
-                  <p class="role">Founder, Local Eats</p>
-                </div>
-              </footer>
-            </blockquote>
-          </div>
-        </section>
-
-        <section id="about" class="section about-section">
-            <h2 class="section-title reveal-text">Meet the Founders</h2>
-            <p class="section-subtitle reveal-text">The minds behind the mission at Veekode.</p>
-
-            <div class="founder-grid">
-                <div class="founder-card reveal-card">
-                    <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=120&h=120&dpr=2" alt="Avinash Prasad">
-                    <h3>Avinash Prasad</h3>
-                    <p>Co-Founder & CEO</p>
-                </div>
-                <div class="founder-card reveal-card">
-                    <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=120&h=120&dpr=2" alt="Vikas Yadav">
-                    <h3>Vikas Yadav</h3>
-                    <p>Co-Founder & CTO</p>
+    <section class="section py-5">
+        <div class="container">
+            <div class="hero-section">
+                <div class="hero-section-text-holder">
+                    <div class="hero-section-sticky">
+                        <div class="hero-sticky-holder parallaxed" style="transition: all 0.4s linear;">
+                            <h4 class="text-white subtitle-small gradiant-color">Top-Notch</h4>
+                            <h1 class="hero-text-holder mb-0">
+                                <div class="hero-text-wrapper _01">
+                                    <div class="hero-text">Website </div>
+                                    <div class="hero-text-blur">Website</div>
+                                </div>
+                                <div class="hero-text-wrapper _02">
+                                    <div class="hero-text _02">Designing</div>
+                                    <div class="hero-text-blur">Designing</div>
+                                </div>
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="iphone-holder parallaxed" style="transition: all 0.8s linear;" >
+                    
+                    <img src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/iphone-14-pro.webp" loading="lazy" class="iphone-image" alt="tablet-screen">
+                        <div class="iphone-screen"><img src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/hero-image.jpg" loading="lazy" class="iphone-screen-image" alt="hero-image"></div>
+                        <div class="iphone-drop-shadow" style="opacity: 1;"></div>
+                    </div>
                 </div>
             </div>
-        </section>
-
-        <section id="metrics" class="section metrics-section">
-          <div class="metric-grid">
-            <div class="metric-item reveal-text">
-              <span class="metric-number">99%</span>
-              <p>Client Satisfaction Rate</p>
-            </div>
-            <div class="metric-item reveal-text">
-              <span class="metric-number">&lt; 2s</span>
-              <p>Average Page Load Time</p>
-            </div>
-            <div class="metric-item reveal-text">
-              <span class="metric-number">35%</span>
-              <p>Average Traffic Growth (YOY)</p>
-            </div>
-          </div>
-        </section>
-
-        <section id="faq" class="section faq-section">
-          <h2 class="section-title reveal-text">Frequently Asked Questions</h2>
-          <div class="faq-container">
-            <details class="faq-item reveal-card">
-              <summary>What are your typical project timelines?</summary>
-              <p>Starter websites usually take 7–10 business days from contract signing to launch. Larger, custom projects typically range from 4 to 8 weeks.</p>
-            </details>
-            <details class="faq-item reveal-card">
-              <summary>Do you handle hosting and maintenance?</summary>
-              <p>Yes, we offer comprehensive monthly care packages that include secure hosting, regular backups, security monitoring, and content updates.</p>
-            </details>
-            <details class="faq-item reveal-card">
-              <summary>What is included in the SEO baseline?</summary>
-              <p>We ensure proper site structure, meta tags, schema markup, and Google Search Console integration so your site is ready to rank immediately.</p>
-            </details>
-            <details class="faq-item reveal-card">
-              <summary>What if I need revisions after launch?</summary>
-              <p>Our packages include a revision period post-launch. For ongoing changes, our monthly maintenance plans cover unlimited small revisions.</p>
-            </details>
-          </div>
-        </section>
-
-        <section id="contact" class="section contact-section">
-          <h2 class="section-title reveal-text">Book Your Free Consult</h2>
-          <p class="section-subtitle reveal-text">Tell us about your project and let's start building your digital success engine.</p>
-          
-          <form class="contact-form reveal-text">
-            <div class="form-group">
-              <input type="text" placeholder="Your Name" required>
-              <input type="email" placeholder="Your Email" required>
-            </div>
-            <div class="form-group">
-              <input type="tel" placeholder="Phone Number (Optional)">
-              <select>
-                <option value="">Budget Range (Optional)</option>
-                <option value="low">₹10k - ₹25k</option>
-                <option value="mid">₹25k - ₹50k</option>
-                <option value="high">₹50k+</option>
-              </select>
-            </div>
-            <textarea placeholder="Briefly describe your project goals..." rows="5" required></textarea>
-            <button type="submit" class="primary-cta">Send Request / Book Free Consult</button>
-          </form>
-
-          <div class="alternate-contact reveal-text">
-            <p>Or connect instantly:</p>
-            <a href="https://wa.me/919876543210" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp Chat</a>
-            <a href="mailto:hello@veekode.com"><i class="fas fa-envelope"></i> hello@veekode.com</a>
-          </div>
-        </section>
-      </main>
-
-      <footer class="footer">
-        <div class="footer-content">
-          <div class="footer-logo">
-            <img src="logo-removebg-preview.png" alt="Veekode Logo" class="logo-image-footer">
-            <p class="tagline">Building digital success engines.</p>
-          </div>
-          <div class="footer-links-group">
-            <h4>Company</h4>
-            <ul>
-              <li><a href="#about">About Us</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-          <div class="footer-links-group">
-            <h4>Legal</h4>
-            <ul>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms of Service</a></li>
-            </ul>
-          </div>
-          <div class="footer-social">
-            <h4>Connect</h4>
-            <div class="social-icons">
-              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            </div>
-            <p>Email: hello@veekode.com</p>
-          </div>
         </div>
-        <div class="footer-bottom">
-          <p>&copy; 2025 Veekode. All Rights Reserved.</p>
+    </section>
+
+    <section class="callback-section">
+        <div class="container text-center">
+            <div class="hero-section-paragraph-holder">
+            
+            <img src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/celebrating-icon.png" loading="lazy" class="celebrating-icon" alt="celebrating years of experience">
+            
+                <div class="hero-paragraph-holder">
+                    <p>With years of experience in Website Designing & development, Veekode brings expertise, innovation, and user-focused design to every project. Let us transform your online presence with intuitive website design that drives growth and engagement.</p>
+                </div>
+                <div class="from-wra-er">
+                    <div class="form-block w-form">
+                         <form id="email-form" action="#" method="POST">
+                            <div class="from-holder">
+                                <input class="text-field-form w-input"  id="mobile"  name="mobile" placeholder="Enter Your Mobile No.*"  pattern="^[6789]\d{9,9}$" inputmode="numeric" title="Mobile No. should be 10 digit, alphanumeric and spacial characters are not allow "required>
+                                <input type="submit" data-wait="Please wait..." class="racb-btn button from w-button" value="Request a Callback">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
-      </footer>
+    </section>
+
+    <section class="clients-section" id="client">
+        <div class="container-fluid px-0">
+            <div class="fade-in-move-on-scroll">
+                <div class="gradiant-color"><p>Trusted by Top-Tier Clients</p></div>
+            </div>
+            <div class="clients-slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="client-block"><img src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/client-1.png" alt="audi"></div>
+                    </div>
+                     
+                    <div class="swiper-slide">
+                        <div class="client-block"><img src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/client-3.png" alt="grantthornton"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="client-block"><img src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/client-4.png" alt="fitmirchi"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="client-block"><img src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/client-5.png" alt="astrogemslab"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="client-block"><img src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/client-6.png" alt="chanakyaforum"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="client-block"><img src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/client-7.png" alt="MDH"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="client-block"><img src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/client-8.png" alt="trump towers delhi ncr"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="client-block"><img src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/client-9.png" alt="Invent store"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="clients-slider swiper" dir="rtl">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="client-block"><img src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/client-10.png" alt="EY"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="client-block"><img src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/client-11.png" alt="Anand"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="client-block"><img src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/client-12.png" alt="Porsche"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="client-block"><img src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/client-13.png" alt="TSH"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="client-block"><img src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/client-14.png" alt="KFC"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="client-block"><img src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/client-15.png" alt="Ubon"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="client-block"><img src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/client-16.png" alt="tribecadevelopers"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="client-block"><img src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/client-17.png" alt="bharatinvest"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center pt-5">
+             <a title="Get in Touch" class="btn racb-btn btn-lg cta-btn-lg rounded-pill fw600 position-relative z-1" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"> 
+         <div class="tap_invite">
+                  <div class="white_dot"></div>
+                  <div class="circle one"></div>
+                  <div class="circle two"></div>
+                  <div class="circle three"></div>
+                </div>  Get A Quote </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="container px-md-5">
+            <div class="row">
+                <div class="col-lg-8 mx-auto mb-4">
+                    <div class="section-heading text-center">
+                        <h2 class="gradiant-color">Designing Websites That Drive Business Growth</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="about-content-wrap row gx-5 pt-4">
+                <div class="col-lg-7">
+                    <div class="content-block about-content h-100 js-tilt">
+                        <p>At Veekode, we’re a team of passionate designers, developers, and strategists dedicated to helping brands grow digitally. We blend creativity, technology, and strategy to craft meaningful digital experiences — from high-performing websites to impactful brand identities. Our focus is simple: deliver results that look great and work even better.</p>
+                         <h3 class="content-block__heading gradiant-color">What We Offer</h3>
+    <div class="wwo">
+    <ul>
+        <li><strong>Custom UI and UX</strong> – For the website designs we provide custom design according to your target audience and business needs.</li> 
+        <li><strong>Web Design & Development</strong> – We offer creative and responsive designs that ensure a unique and engaging user experience, crafting fast, modern, and conversion-focused websites.</li>
+        <li><strong>App Development</strong> – We build high-performance native and cross-platform apps that your users will love.</li>
+        <li><strong>UI/UX Design</strong> – Designing intuitive experiences that blend creativity with functionality.</li>
+        <li><strong>Digital Marketing & SEO</strong> – Amplifying your reach through data-driven marketing and powerful SEO strategies.</li>
+    </ul>
+       </div>       
+         </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="content-block contact-form h-100 js-tilt mob-mgn">
+                        <div class="contact-form-wrap">
+                            <h3 class="text-center content-block__heading mb-0 gradiant-color">Make an Enquiry </h3> <span class="fs14 mb-3 d-block text-center">Submit your details and someone from our team will contact you shortly. </span>
+                            <form action="#" method="POST">
+                                <div class="form-group">
+                                    <input class="form-control" type="text" id="name" name="name" placeholder="Name*" required>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="email" id="emailid" name="email" placeholder="Email ID*" required>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" id="mobile" name="mobile" placeholder="Mobile No.*"  pattern="^[6789]\d{9,9}$" inputmode="numeric" title="Mobile No. should be 10 digit, alphanumeric and spacial characters are not allow "required>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" id="company" name="company" placeholder="Company*" required>
+                                </div>
+                                <button class="btn racb-btn w-100 rounded-pill">SUBMIT</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="work-section" id="work">
+        <div class="container">
+            <div class="section-heading text-center mb-4 mb-md-5">
+                <h2 class="gradiant-color ">Our Work</h2>
+            </div>
+            <div class="work-block content-block1 bg-dark-2 rounded-3 js-tilt d-lg-block d-md-block d-none">
+                <div class="work-slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="row gx-md-5 align-items-center">
+                                <div class="col-md-5">
+                                    <div class="work-block__client-logo"><img src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/trumptowersdelhincr-logo.png" alt="trumptowersdelhincr-logo"></div>
+                                    <p>A globally renowned luxury real estate brand. Designing a website for such an iconic name required meticulous attention to detail, ensuring an elite user experience that perfectly mirrors the brand's prestige and sophistication, and the same reflects in the website designed by us.  </p>
+                                    <div class="work-callback">
+                                      <a title="Request a Call Back" class="btn racb-btn btn-lg cta-btn-lg rounded-pill fw600 position-relative z-1" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"> 
+                                        <div class="tap_invite">
+                                            <div class="white_dot"></div>
+                                            <div class="circle one"></div>
+                                            <div class="circle two"></div>
+                                            <div class="circle three"></div>
+                                        </div>  Let's discuss your Project 
+                                      </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <figure class="mb-0">
+                                        <img class="img-fluid mx-auto d-block screen-wrok" src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/trumptowersdelhincr.png" alt="trumptowersdelhincr">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <div class="row gx-md-5 align-items-center">
+                                <div class="col-md-5">
+                                    <div class="work-block__client-logo"><img src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/inventstore-logo.png" alt="inventstore-logo"></div>
+                                    <p>We designed and developed a fast and secure e-commerce website for iNvent Store, a premium Apple Centre, featuring intuitive navigation and secure payment integration. The platform reflects the brand’s premium standards, enhancing the online shopping experience. </p>
+                                    <div class="work-callback">
+                                      <a title="Request a Call Back" class="btn racb-btn btn-lg cta-btn-lg rounded-pill fw600 position-relative z-1" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"> 
+                                        <div class="tap_invite">
+                                            <div class="white_dot"></div>
+                                            <div class="circle one"></div>
+                                            <div class="circle two"></div>
+                                            <div class="circle three"></div>
+                                        </div>  Let's discuss your Project 
+                                      </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <figure class="mb-0">
+                                        <img class="img-fluid mx-auto d-block screen-wrok" src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/inventstore.png" alt="inventstore">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <div class="row gx-md-5 align-items-center">
+                                <div class="col-md-5">
+                                    <div class="work-block__client-logo"><img src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/audigurgaon-logo.png" alt="audigurgaon-logo"></div>
+                                    <p>We designed and developed a dynamic website for Audi Gurgaon, showcasing their premium vehicles with elegance and functionality. The website delivers a seamless user experience, reflecting Audi's luxury and innovation.</p>
+                                    <div class="work-callback">
+                                      <a title="Request a Call Back" class="btn racb-btn btn-lg cta-btn-lg rounded-pill fw600 position-relative z-1" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"> 
+                                        <div class="tap_invite">
+                                            <div class="white_dot"></div>
+                                            <div class="circle one"></div>
+                                            <div class="circle two"></div>
+                                            <div class="circle three"></div>
+                                        </div>  Let's discuss your Project 
+                                      </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <figure class="mb-0">
+                                        <img class="img-fluid mx-auto d-block screen-wrok" src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/audigurgaon.png" alt="trumptowersdelhincr">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <div class="row gx-md-5 align-items-center">
+                                <div class="col-md-5">
+                                    <div class="work-block__client-logo"><img src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/hcltech-logo.png" alt="hcltech-logo"></div>
+                                    <p>We designed and developed a dynamic website for HCL educational verticle, showcasing their programs and initiatives with clarity and professionalism. The platform provides an intuitive user experience, aligning with HCL’s vision for innovation in education.</p>
+                                    <div class="work-callback">
+                                      <a title="Request a Call Back" class="btn racb-btn btn-lg cta-btn-lg rounded-pill fw600 position-relative z-1" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"> 
+                                        <div class="tap_invite">
+                                            <div class="white_dot"></div>
+                                            <div class="circle one"></div>
+                                            <div class="circle two"></div>
+                                            <div class="circle three"></div>
+                                        </div>  Let's discuss your Project 
+                                      </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <figure class="mb-0">
+                                        <img class="img-fluid mx-auto d-block screen-wrok" src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/hcltech.png" alt="hcltech">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <div class="row gx-md-5 align-items-center">
+                                <div class="col-md-5">
+                                    <div class="work-block__client-logo"><img src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/solethreads-logo.png" alt="solethreads-logo"></div>
+                                    <p>We developed a robust e-commerce platform for Solethreads, a modern shoe brand targeting young audiences. The platform is designed to handle high traffic seamlessly while offering a trendy and user-friendly shopping experience. </p>
+                                    <div class="work-callback">
+                                      <a title="Request a Call Back" class="btn racb-btn btn-lg cta-btn-lg rounded-pill fw600 position-relative z-1" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"> 
+                                        <div class="tap_invite">
+                                            <div class="white_dot"></div>
+                                            <div class="circle one"></div>
+                                            <div class="circle two"></div>
+                                            <div class="circle three"></div>
+                                        </div>  Let's discuss your Project 
+                                      </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <figure class="mb-0">
+                                        <img class="img-fluid mx-auto d-block screen-wrok" src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/solethreads.png" alt="solethreads">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <div class="row gx-md-5 align-items-center">
+                                <div class="col-md-5">
+                                    <div class="work-block__client-logo"><img src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/ubonindia-logo.png" alt="ubonindia-logo"></div>
+                                    <p>We developed a modern e-commerce website for Ubon, a renowned mobile accessory brand, to showcase their extensive product range. The platform ensures a seamless shopping experience, reflecting Ubon's innovation and style.  </p>
+                                    <div class="work-callback">
+                                      <a title="Request a Call Back" class="btn racb-btn btn-lg cta-btn-lg rounded-pill fw600 position-relative z-1" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"> 
+                                        <div class="tap_invite">
+                                            <div class="white_dot"></div>
+                                            <div class="circle one"></div>
+                                            <div class="circle two"></div>
+                                            <div class="circle three"></div>
+                                        </div>  Let's discuss your Project 
+                                      </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <figure class="mb-0">
+                                        <img class="img-fluid mx-auto d-block screen-wrok" src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/ubonindia.png" alt="ubonindia">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <div class="row gx-md-5 align-items-center">
+                                <div class="col-md-5">
+                                    <div class="work-block__client-logo"><img src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/learningt-logo.png" alt="learningt-logo"></div>
+                                    <p>We developed a comprehensive Learning Management System for Learn in GT, the online education vertical of Grant Thornton. The platform enables seamless course delivery, user management, and interactive learning experiences, reflecting their commitment to professional education.  </p>
+                                    <div class="work-callback">
+                                      <a title="Request a Call Back" class="btn racb-btn btn-lg cta-btn-lg rounded-pill fw600 position-relative z-1" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"> 
+                                        <div class="tap_invite">
+                                            <div class="white_dot"></div>
+                                            <div class="circle one"></div>
+                                            <div class="circle two"></div>
+                                            <div class="circle three"></div>
+                                        </div>  Let's discuss your Project 
+                                      </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <figure class="mb-0">
+                                        <img class="img-fluid mx-auto d-block screen-wrok" src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/learningt.png" alt="learningt">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   <div class="swiper-button-prev"></div>
+                   <div class="swiper-button-next"></div>      
+                </div>
+            </div>
+            
+          <!------Show in mobile------->
+          
+            <div class="work-block rounded-3 d-lg-none d-md-none">
+                <div class="mobile-work-slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="mobile-work gx-md-5">
+                                <figure class="mb-0">
+                                    <img class="img-fluid mx-auto d-block screen-wrok" src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/trumptowersdelhincr.png" alt="trumptowersdelhincr">
+                                </figure>
+                                <div class="work-block__client-logo"><img src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/trumptowersdelhincr-logo.png" alt="trumptowersdelhincr-logo"></div>
+                                <p>A globally renowned luxury real estate brand. Designing a website for such an iconic name required meticulous attention to detail, ensuring an elite user experience that perfectly mirrors the brand's prestige and sophistication, and the same reflects in the website designed by us.  </p>
+                                <div class="work-callback">
+                                  <a title="Request a Call Back" class="btn racb-btn btn-lg cta-btn-lg rounded-pill fw600 position-relative z-1" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"> 
+                                    <div class="tap_invite">
+                                        <div class="white_dot"></div>
+                                        <div class="circle one"></div>
+                                        <div class="circle two"></div>
+                                        <div class="circle three"></div>
+                                    </div>  Let's discuss your Project 
+                                  </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <div class="mobile-work gx-md-5">
+                                <figure class="mb-0">
+                                    <img class="img-fluid mx-auto d-block screen-wrok" src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/inventstore.png" alt="inventstore">
+                                </figure>
+                                <div class="work-block__client-logo"><img src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/inventstore-logo.png" alt="inventstore-logo"></div>
+                                <p>We designed and developed a fast and secure e-commerce website for iNvent Store, a premium Apple Centre, featuring intuitive navigation and secure payment integration. The platform reflects the brand’s premium standards, enhancing the online shopping experience. </p>
+                                <div class="work-callback">
+                                  <a title="Request a Call Back" class="btn racb-btn btn-lg cta-btn-lg rounded-pill fw600 position-relative z-1" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"> 
+                                    <div class="tap_invite">
+                                        <div class="white_dot"></div>
+                                        <div class="circle one"></div>
+                                        <div class="circle two"></div>
+                                        <div class="circle three"></div>
+                                    </div>  Let's discuss your Project 
+                                  </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <div class="mobile-work gx-md-5 ">
+                                <figure class="mb-0">
+                                    <img class="img-fluid mx-auto d-block screen-wrok" src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/audigurgaon.png" alt="trumptowersdelhincr">
+                                </figure>
+                                <div class="work-block__client-logo"><img src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/audigurgaon-logo.png" alt="audigurgaon-logo"></div>
+                                <p>We designed and developed a dynamic website for Audi Gurgaon, showcasing their premium vehicles with elegance and functionality. The website delivers a seamless user experience, reflecting Audi's luxury and innovation.</p>
+                                <div class="work-callback">
+                                  <a title="Request a Call Back" class="btn racb-btn btn-lg cta-btn-lg rounded-pill fw600 position-relative z-1" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"> 
+                                    <div class="tap_invite">
+                                        <div class="white_dot"></div>
+                                        <div class="circle one"></div>
+                                        <div class="circle two"></div>
+                                        <div class="circle three"></div>
+                                    </div>  Let's discuss your Project 
+                                  </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <div class="mobile-work gx-md-5  ">
+                                <figure class="mb-0">
+                                    <img class="img-fluid mx-auto d-block screen-wrok" src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/hcltech.png" alt="hcltech">
+                                </figure>
+                                <div class="work-block__client-logo"><img src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/hcltech-logo.png" alt="hcltech-logo"></div>
+                                <p>We designed and developed a dynamic website for HCL educational verticle, showcasing their programs and initiatives with clarity and professionalism. The platform provides an intuitive user experience, aligning with HCL’s vision for innovation in education.</p>
+                                <div class="work-callback">
+                                  <a title="Request a Call Back" class="btn racb-btn btn-lg cta-btn-lg rounded-pill fw600 position-relative z-1" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"> 
+                                    <div class="tap_invite">
+                                        <div class="white_dot"></div>
+                                        <div class="circle one"></div>
+                                        <div class="circle two"></div>
+                                        <div class="circle three"></div>
+                                    </div>  Let's discuss your Project 
+                                  </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <div class="mobile-work gx-md-5">
+                                <figure class="mb-0">
+                                    <img class="img-fluid mx-auto d-block screen-wrok" src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/solethreads.png" alt="solethreads">
+                                </figure>
+                                <div class="work-block__client-logo"><img src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/solethreads-logo.png" alt="solethreads-logo"></div>
+                                <p>We developed a robust e-commerce platform for Solethreads, a modern shoe brand targeting young audiences. The platform is designed to handle high traffic seamlessly while offering a trendy and user-friendly shopping experience. </p>
+                                <div class="work-callback">
+                                  <a title="Request a Call Back" class="btn racb-btn btn-lg cta-btn-lg rounded-pill fw600 position-relative z-1" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"> 
+                                    <div class="tap_invite">
+                                        <div class="white_dot"></div>
+                                        <div class="circle one"></div>
+                                        <div class="circle two"></div>
+                                        <div class="circle three"></div>
+                                    </div>  Let's discuss your Project 
+                                  </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <div class="mobile-work gx-md-5">
+                                <figure class="mb-0">
+                                    <img class="img-fluid mx-auto d-block screen-wrok" src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/ubonindia.png" alt="ubonindia">
+                                </figure>
+                                <div class="work-block__client-logo"><img src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/ubonindia-logo.png" alt="ubonindia-logo"></div>
+                                <p>We developed a modern e-commerce website for Ubon, a renowned mobile accessory brand, to showcase their extensive product range. The platform ensures a seamless shopping experience, reflecting Ubon's innovation and style.  </p>
+                                <div class="work-callback">
+                                  <a title="Request a Call Back" class="btn racb-btn btn-lg cta-btn-lg rounded-pill fw600 position-relative z-1" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"> 
+                                    <div class="tap_invite">
+                                        <div class="white_dot"></div>
+                                        <div class="circle one"></div>
+                                        <div class="circle two"></div>
+                                        <div class="circle three"></div>
+                                    </div>  Let's discuss your Project 
+                                  </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <div class="mobile-work gx-md-5">
+                                <figure class="mb-0">
+                                    <img class="img-fluid mx-auto d-block screen-wrok" src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/learningt.png" alt="learningt">
+                                </figure>
+                                <div class="work-block__client-logo"><img src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/learningt-logo.png" alt="learningt-logo"></div>
+                                <p>We developed a comprehensive Learning Management System for Learn in GT, the online education vertical of Grant Thornton. The platform enables seamless course delivery, user management, and interactive learning experiences, reflecting their commitment to professional education.  </p>
+                                <div class="work-callback">
+                                  <a title="Request a Call Back" class="btn racb-btn btn-lg cta-btn-lg rounded-pill fw600 position-relative z-1" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"> 
+                                    <div class="tap_invite">
+                                        <div class="white_dot"></div>
+                                        <div class="circle one"></div>
+                                        <div class="circle two"></div>
+                                        <div class="circle three"></div>
+                                    </div>  Let's discuss your Project 
+                                  </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>           
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="award-section" id="awards">
+        <div class="container position-relative">
+            <div class="col-lg-9 mx-auto mb-5">
+                <div class="section-heading text-center">
+                    <h2 class="gradiant-color">We are an Award Winning Website Designing Company</h2>
+                </div>
+            </div>
+            <div class="row awards-wrap align-items-center">
+                <div class="col-lg-5">
+                    <div class="row g-3 mob-mgn">
+                        <div class="col-md-6 col-6 award-block">
+                        <div class="award-bg-color">
+                        <img class="img-fluid mx-auto d-block" src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/iaf-awards-logo-white.webp" alt="iaf-awards-logo">
+                        </div>
+                        </div>
+                        <div class="col-md-6 col-6 award-block">
+                        <div class="award-bg-color"><img class="img-fluid mx-auto d-block" src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/awards-logo1.png "alt="awards image"></div></div>
+                        <div class="col-md-6 col-6 award-block"><div class="award-bg-color"><img class="img-fluid mx-auto d-block" src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/awards-logo2.png" alt="awards "></div></div>
+                         <div class="col-md-6 col-6 award-block"><div class="award-bg-color"><img class="img-fluid mx-auto d-block" src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/awards-logo3.png" alt="awards-logo"></div></div>
+                    </div>
+                </div>
+                
+                 <div class="col-lg-7 js-tilt1">
+                  <img class="img-fluid rounded-5" src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/award-by-sheila-dixit-radiant.webp" alt="award-by-sheila-dixit-radiant">
+                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="whyus-section" id="why">
+        <div class="container px-4">
+            <div class="row gx-5 justify-content-between">
+                <div class="col-md-5">
+                    <div class="stats-list-wrap">
+                        <div class="stat-list">
+                            <span class="gradiant-color"><span class="counter">10</span>+</span>
+                            <h6>Years of Experience</h6>
+                            <p>With over 10 years in the industry, we bring a wealth of experience and innovation to every project, ensuring solutions that stand the test of time.</p>
+                        </div>
+                        <div class="stat-list">
+                            <span class="gradiant-color"><span class="counter">100</span>+</span>
+                            <h6>Project Delivered</h6>
+                            <p>Our proven track record of delivering 100+ successful projects speaks to our commitment to excellence and client satisfaction</p>
+                        </div>
+                        <div class="stat-list">
+                            <span class="gradiant-color"><span class="counter">50</span>+</span>
+                            <h6>Clients Served</h6>
+                            <p>From startups to growing businesses, we've proudly partnered with 50+ clients, building lasting relationships and impactful solutions.</p>
+                        </div>
+                        
+                        <div class="stat-list">
+                             <span class="gradiant-color"><span class="counter">80</span>+</span> 
+                            <h6>Custom Development</h6>
+                            <p>We specialise in developing custom solutions tailored to your unique needs, ensuring your product aligns perfectly with your vision and goals.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="why-choose-wrap">
+                        <div class="why-choose__content">
+                            <div class="content-block p-2 bg-transparent border-0 js-tilt1">
+                                <p class="text-uppercase">WHY CHOOSE US</p>
+                                <h3 class="content-block__heading gradiant-color">Discover What Sets Us Apart: Your Success, Our Commitment</h3>
+                                <p>At Veekode, we bring your vision to life with innovative and impactful solutions. In our journey, we’ve earned the trust of startups and growing brands by delivering exceptional Websites, Web Applications and Mobile apps. We are overwhelmed to have played a substantial role in the success of many businesses by providing them with strong and robust tech solutions.  </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <footer class="site-footer">
+        <div class="container-xl">
+            <div class="footer-inner bg-dark-2">
+                <div class="row footer-top justify-content-between align-items-center">
+                    <div class="col-sm-auto py-3">
+                        <img class="footer-logo" src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/radiant-web-tech-logo-footer.svg" alt="Veekode logo">
+                    </div>
+                    <div class="col-sm-auto py-3">
+                     <div class="">
+                                      <a title="Request a Call Back" class="btn racb-btn btn-lg cta-btn-lg rounded-pill fw600 position-relative z-1" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"> 
+         <div class="tap_invite">
+                  <div class="white_dot"></div>
+                  <div class="circle one"></div>
+                  <div class="circle two"></div>
+                  <div class="circle three"></div>
+                </div> REQUEST A CALLBACK </a></div>
+                    </div>
+                </div>
+                <div class="py-4 opacity4">
+                    <hr>
+                </div>
+                <div class="row footer-btm gx-md-5">
+                    <div class="col-md-4 py-3">
+                        <div class="ftr-info-block">
+                            <h6>Veekode Digital Solutions</h6>
+                            <p>123 Digital Avenue, Tech City, State 12345, Country.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 py-3">
+                        <div class="ftr-info-block">
+                            <h6>Sales</h6>
+                            <p><a class="text-decoration-none text-black-65" href="tel:+1-555-123-4567" title="+1-555-123-4567">+1-555-123-4567</a></p>
+                              <h6>Support</h6>
+                            <p><a  title="+1-555-987-6543" class="text-decoration-none text-black-65" href="tel:+1-555-987-6543">+1-555-987-6543</a></p> 
+                        </div>
+                    </div>
+                    <div class="col-md-4 py-3">
+                        <div class="ftr-info-block">
+                            <h6>Contact Email</h6>
+                            <p><a class="text-decoration-none text-black-65" href="mailto:info@veekode.com" title="info@veekode.com">info@veekode.com</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="py-4 opacity4">
+                    <hr>
+                </div>
+                <div class="row ftr-copyright ">
+                    <p class="col-md-12 mb-0">
+                        © Copyright 2025 Veekode. All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+<!-- popup form Start-->
+  <div class="modal fade exampleModal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false" >
+  <div class="modal-dialog modal-dialog-centered  modal-lg">
+    <div class="modal-content">
+      <div class="modal-header border-bottom-0">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="https://radiantwebtech.com/website-designing-in-delhi/assets/images/cross-icon.png" alt="cross icon"> </button>
+      </div>
+      <div class="modal-body">
+        <h3>Trusted by Top Brands Since 2015</h3>
+        <p class="text-black-50">Share your information and we will contact you soon. </p>
+        <form class="form-row" action="#" method="POST">
+          <div class="form-elements">
+            <div class="row">
+              <div class="col-md-6 col-12">
+                <div class="py-2">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Name*" required>
+                    <label for="name">Name*</label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-12">
+                <div class="py-2">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="mobile"  name="mobile" placeholder="Mobile No.*"  pattern="^[6789]\d{9,9}$" inputmode="numeric" title="Mobile No. should be 10 digit, alphanumeric and spacial characters are not allow "required>
+                    <label for="mobile">Mobile No.*</label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-12">
+                <div class="py-2">
+                  <div class="form-floating">
+                    <input type="email" class="form-control" id="emailid" name="email" placeholder="Email ID*" required >
+                    <label for="emailid">Email ID*</label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-12">
+                <div class="py-2">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="company" name="company" placeholder="Company*" required>
+                    <label for="company">Company*</label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-12 mx-auto">
+                <div class="form-submit-button pt-2 pb-2">
+                  <button class="btn racb-btn btn-lg cta-btn-lg rounded-pill py-3 shadow-sm fw600" name="submit" type="submit">SUBMIT</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
-    <script type="module" src="script.js"></script>
+  </div>
+</div>
+</div>
+  
+   <div class="mobile-fx d-md-none d-lg-none shadow text-center bg-white">
+  <div class="row d-flex align-items-center">
+    <div class="col-6 box-text"> <a href="#" class="text-white d-block" title="Request a Call Back" data-bs-toggle="modal" data-bs-target="#exampleModal"> Get A Quote</a> </div>
+    <div class="col-6 box-text box-text2"> <a href="tel:+15551234567" class=" d-block"> Call Now</a> </div>
+  </div>  
+</div> 
+    
+    
+ <div id="fixButton" class="bottomMenu hide"> 
+ <div class="row justify-content-between align-items-center">
+ <div class="col-md-3"> <div title="let's discuss" class="btn racb-btn rounded-pill fw600 position-relative"> 
+ <span class="discuss position-absolute">Call Us</span>
+            +1-555-123-4567 </div>
+                
+                </div>
+ <div class="col-auto text-end"><div class="enquery-btn"> <a href="#"  data-bs-toggle="modal" data-bs-target="#exampleModal" title="enquery"><i class="fa fa-envelope"></i></a> </div></div>
+ </div>
+ </div>   
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11.1/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
