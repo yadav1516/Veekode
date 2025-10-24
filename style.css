@@ -622,7 +622,7 @@ body {
 
 .portfolio-image {
   height: 280px;
-  position: relative;
+  position: relaabtive;
   overflow: hidden;
   transition: all 0.4s ease;
 }

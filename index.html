@@ -1,237 +1,256 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Veekode - Crafting Digital Experiences</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div class="sidebar-nav">
-      <a href="logo-removebg-preview.png" class="sidebar-logo">
-        <svg viewBox="0 0 24 24" fill="currentColor">
-          <circle cx="12" cy="12" r="10"/>
-          <path d="M12 6v12M6 12h12" stroke="white" stroke-width="2"/>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Veekode - Crafting Digital Experiences</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="sidebar-nav">
+    <a href="logo-removebg-preview.png" class="sidebar-logo">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <circle cx="12" cy="12" r="10" />
+        <path d="M12 6v12M6 12h12" stroke="white" stroke-width="2" />
+      </svg>
+    </a>
+    <div class="sidebar-links">
+      <a href="#home" class="sidebar-link" title="Home">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 0 0 1-2-2z"></path>
+          <polyline points="9 22 9 12 15 12 15 22"></polyline>
         </svg>
       </a>
-      <div class="sidebar-links">
-        <a href="#home" class="sidebar-link" title="Home">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 0 0 1-2-2z"></path>
-            <polyline points="9 22 9 12 15 12 15 22"></polyline>
-          </svg>
-        </a>
-        <a href="#services" class="sidebar-link" title="Services">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-            <line x1="3" y1="9" x2="21" y2="9"></line>
-            <line x1="9" y1="21" x2="9" y2="9"></line>
-          </svg>
-        </a>
-        <a href="#work" class="sidebar-link" title="Portfolio">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="12" cy="12" r="3"></circle>
-            <path d="M12 1v6m0 6v6m10-11h-6m-6 0H4"></path>
-          </svg>
-        </a>
-        <a href="#contact" class="sidebar-link" title="Contact">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-            <polyline points="22,6 12,13 2,6"></polyline>
-          </svg>
-        </a>
+      <a href="#services" class="sidebar-link" title="Services">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="3" y1="9" x2="21" y2="9"></line>
+          <line x1="9" y1="21" x2="9" y2="9"></line>
+        </svg>
+      </a>
+      <a href="#work" class="sidebar-link" title="Portfolio">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="3"></circle>
+          <path d="M12 1v6m0 6v6m10-11h-6m-6 0H4"></path>
+        </svg>
+      </a>
+      <a href="#contact" class="sidebar-link" title="Contact">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+          <polyline points="22,6 12,13 2,6"></polyline>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <nav class="navbar">
+    <div class="nav-wrapper">
+      <img class="img-logo" src="log-png .png" alt="">
+      <a href="#contact" class="btn-cta">Start Your Project</a>
+    </div>
+  </nav>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">
+        We build brands<br>
+        websites & campaigns that<br>
+        grow businesses.
+      </h1>
+
+    </div>
+    <div class="hero-bottom">
+      <p class="hero-description">
+        Design, web, and marketing <br>
+        — everything your business needs to stand out.
+      </p>
+      <a href="#contact" class="btn-intro">
+        <span>BOOK AN INTRO CALL</span>
+        <div class="btn-icon-group">
+          <span class="icon-emoji">👋</span>
+          <span class="icon-phone">📞</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Our Services</h2>
+        <p class="section-subtitle">Full-stack digital solutions designed to elevate your brand.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+          </div>
+          <h3>Web Design & Development</h3>
+          <p>Crafting fast, modern, and conversion-focused websites that build trust and drive results.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+              <line x1="12" y1="18" x2="12.01" y2="18"></line>
+            </svg>
+          </div>
+          <h3>App Development</h3>
+          <p>Building high-performance native and cross-platform apps that your users will love.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+              <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+              <path d="M2 2l7.586 7.586"></path>
+              <circle cx="11" cy="11" r="2"></circle>
+            </svg>
+          </div>
+          <h3>UI/UX Design</h3>
+          <p>Designing intuitive experiences that blend creativity with functionality.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="12" y1="1" x2="12" y2="23"></line>
+              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+            </svg>
+          </div>
+          <h3>Digital Marketing & SEO</h3>
+          <p>Amplifying your reach through data-driven marketing and powerful SEO strategies.</p>
+        </div>
       </div>
     </div>
+  </section>
 
-    <nav class="navbar">
-      <div class="nav-wrapper">
-        <img class="img-logo" src="log-png .png" alt="">
-        <a href="#contact" class="btn-cta">Start Your Project</a>
-      </div>
-    </nav>
-
-    <section id="home" class="hero">
-      <div class="hero-content">
-        <h1 class="hero-title">
-          We build brands<br>
-          websites & campaigns that<br>
-          grow businesses.
-        </h1>
-        
-      </div>
-      <div class="hero-bottom">
-        <p class="hero-description">
-          Design, web, and marketing <br>
-           — everything your business needs to stand out.
-        </p>
-        <a href="#contact" class="btn-intro">
-          <span>BOOK AN INTRO CALL</span>
-          <div class="btn-icon-group">
-            <span class="icon-emoji">👋</span>
-            <span class="icon-phone">📞</span>
-          </div>
-        </a>
-      </div>
-    </section>
-
-    <section id="services" class="services">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Our Services</h2>
-          <p class="section-subtitle">Full-stack digital solutions designed to elevate your brand.</p>
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual">
+          <img
+            src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="Creative workspace">
         </div>
-        <div class="services-grid">
-          <div class="service-card">
-            <div class="service-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                <line x1="8" y1="21" x2="16" y2="21"></line>
-                <line x1="12" y1="17" x2="12" y2="21"></line>
-              </svg>
+        <div class="about-content">
+          <h2 class="section-title">Why Choose Veekode</h2>
+          <p class="about-text">At Veekode, we’re a team of passionate designers, developers, and strategists dedicated
+            to helping brands grow digitally.
+            We blend creativity, technology, and strategy to craft meaningful digital experiences — from high-performing
+            websites to impactful brand identities.
+            Our focus is simple: deliver results that look great and work even better.</p>
+          <div class="stats-grid">
+            <div class="stat-item">
+              <div class="stat-number">10+</div>
+              <div class="stat-label">Projects Completed</div>
             </div>
-            <h3>Web Design & Development</h3>
-            <p>Crafting fast, modern, and conversion-focused websites that build trust and drive results.</p>
-          </div>
-          <div class="service-card">
-            <div class="service-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
-                <line x1="12" y1="18" x2="12.01" y2="18"></line>
-              </svg>
-            </div>
-            <h3>App Development</h3>
-            <p>Building high-performance native and cross-platform apps that your users will love.</p>
-          </div>
-          <div class="service-card">
-            <div class="service-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
-                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
-                <path d="M2 2l7.586 7.586"></path>
-                <circle cx="11" cy="11" r="2"></circle>
-              </svg>
-            </div>
-            <h3>UI/UX Design</h3>
-            <p>Designing intuitive experiences that blend creativity with functionality.</p>
-          </div>
-          <div class="service-card">
-            <div class="service-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <line x1="12" y1="1" x2="12" y2="23"></line>
-                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-              </svg>
-            </div>
-            <h3>Digital Marketing & SEO</h3>
-            <p>Amplifying your reach through data-driven marketing and powerful SEO strategies.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="about">
-      <div class="container">
-        <div class="about-grid">
-          <div class="about-visual">
-            <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Creative workspace">
-          </div>
-          <div class="about-content">
-            <h2 class="section-title">Why Choose Veekode</h2>
-            <p class="about-text">At Veekode, we’re a team of passionate designers, developers, and strategists dedicated to helping brands grow digitally.
-              We blend creativity, technology, and strategy to craft meaningful digital experiences — from high-performing websites to impactful brand identities.
-              Our focus is simple: deliver results that look great and work even better.</p>
-            <div class="stats-grid">
-              <div class="stat-item">
-                <div class="stat-number">10+</div>
-                <div class="stat-label">Projects Completed</div>
-              </div>
-              <div class="stat-item">
-                <div class="stat-number">95%</div>
-                <div class="stat-label">Satisfaction</div>
-              </div>
+            <div class="stat-item">
+              <div class="stat-number">95%</div>
+              <div class="stat-label">Satisfaction</div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="process">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Our Process</h2>
-          <p class="section-subtitle">From concept to launch, we've got you covered</p>
+  <section class="process">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Our Process</h2>
+        <p class="section-subtitle">From concept to launch, we've got you covered</p>
+      </div>
+      <div class="process-grid">
+        <div class="process-step">
+          <div class="process-icon">💭</div>
+          <h3>Ideate</h3>
+          <p>We brainstorm and strategize to understand your vision and goals.</p>
         </div>
-        <div class="process-grid">
-          <div class="process-step">
-            <div class="process-icon">💭</div>
-            <h3>Ideate</h3>
-            <p>We brainstorm and strategize to understand your vision and goals.</p>
-          </div>
-          <div class="process-step">
-            <div class="process-icon">🎨</div>
-            <h3>Design</h3>
-            <p>Creating beautiful, user-centric designs that capture your brand.</p>
-          </div>
-          <div class="process-step">
-            <div class="process-icon">⚙️</div>
-            <h3>Develop</h3>
-            <p>Building robust, scalable solutions with cutting-edge technology.</p>
-          </div>
-          <div class="process-step">
-            <div class="process-icon">🚀</div>
-            <h3>Launch</h3>
-            <p>Delivering your project on time and supporting its success.</p>
-          </div>
+        <div class="process-step">
+          <div class="process-icon">🎨</div>
+          <h3>Design</h3>
+          <p>Creating beautiful, user-centric designs that capture your brand.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-icon">⚙️</div>
+          <h3>Develop</h3>
+          <p>Building robust, scalable solutions with cutting-edge technology.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-icon">🚀</div>
+          <h3>Launch</h3>
+          <p>Delivering your project on time and supporting its success.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="team" class="team">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Small Team, Big Results</h2>
-          <p class="section-subtitle">Meet the passionate individuals driving innovation at Veekode.</p>
+  <section id="team" class="team">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Small Team, Big Results</h2>
+        <p class="section-subtitle">Meet the passionate individuals driving innovation at Veekode.</p>
+      </div>
+      <div class="team-members-container">
+        <div class="team-member-float-card">
+          <img src="vikas.png" alt="Vikas Yadav">
+          <p class="team-member-title">Vikas Yadav<br>Founder of Veekode</p>
         </div>
-        <div class="team-members-container">
-          <div class="team-member-float-card">
-            <img src="vikas.png" alt="Vikas Yadav">
-            <p class="team-member-title">Vikas Yadav<br>Founder of Veekode</p>
-          </div>
-          <div class="team-member-float-card">
-            <img src="https://media.licdn.com/dms/image/v2/D4D03AQFU4z1T1EzG0Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1718772626967?e=1762992000&v=beta&t=1zWQjp1Eo2CMuO9o4Hm9rTusTzEIiPKNlqhJ4C7DTsQ" alt="Avinash Prasad">
-            <p class="team-member-title">Avinash Prasad<br>Co-founder of Veekode</p>
-          </div>
+        <div class="team-member-float-card">
+          <img
+            src="https://media.licdn.com/dms/image/v2/D4D03AQFU4z1T1EzG0Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1718772626967?e=1762992000&v=beta&t=1zWQjp1Eo2CMuO9o4Hm9rTusTzEIiPKNlqhJ4C7DTsQ"
+            alt="Avinash Prasad">
+          <p class="team-member-title">Avinash Prasad<br>Co-founder of Veekode</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="work" class="portfolio">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Our Work</h2>
-          <p class="section-subtitle">Check out some of our recent projects</p>
+  <section id="work" class="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Our Work</h2>
+        <p class="section-subtitle">Check out some of our recent projects</p>
+      </div>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <div class="portfolio-image" style="background: url(logo.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-color: #fff;
+          border-radius: 16px;">></div>
+          <div class="portfolio-info">
+            <h3>TicketAdda</h3>
+            <p>Web & App Development/Social Marketing</p>
+            <a href="https://ticketadda.in/" class="portfolio-link">View Project</a>
+          </div>
         </div>
-        <div class="portfolio-grid">
-          <div class="portfolio-item">
-            <div class="portfolio-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
-            <div class="portfolio-info">
-              <h3>TicketAdda</h3>
-              <p>Web & App Development/Social Marketing</p>
-              <a href="https://ticketadda.in/" class="portfolio-link">View Project</a>
-            </div>
+        <div class="portfolio-item">
+          <div class="portfolio-image" style="background: url(https://media.licdn.com/dms/image/v2/D4D0BAQEh_UDjLLY1gQ/company-logo_200_200/company-logo_200_200/0/1695808896676/pareesan_service_pvt_ltd_logo?e=1762992000&v=beta&t=lxp5cJIIhNMJ2nk5o0NQWCENw81dO_SoGYhCoWKSl2w);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: #fff;">
           </div>
-          <div class="portfolio-item">
-            <div class="portfolio-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
-            <div class="portfolio-info">
-              <h3>Pareesan Service pvt ltd</h3>
-              <p>Web Development & Social Marketing</p>
-              <a href="https://pareesan.com/" class="portfolio-link">View Project</a>
-            </div>
+          <div class="portfolio-info">
+            <h3>Pareesan Service Pvt Ltd</h3>
+            <p>Web Development & Social Marketing</p>
+            <a href="https://pareesan.com/" class="portfolio-link">View Project</a>
           </div>
-          <!-- <div class="portfolio-item">
+        </div>
+        <!-- <div class="portfolio-item">
             <div class="portfolio-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
             <div class="portfolio-info">
               <h3>SaaS Dashboard</h3>
@@ -239,7 +258,7 @@
               <a href="#" class="portfolio-link">View Project</a>
             </div>
           </div> -->
-          <!-- <div class="portfolio-item">
+        <!-- <div class="portfolio-item">
             <div class="portfolio-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"></div>
             <div class="portfolio-info">
               <h3>Brand Identity</h3>
@@ -265,119 +284,127 @@
           </div>
         </div> -->
       </div>
-    </section>
+  </section>
 
-    <section class="testimonials">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Client Feedback</h2>
-          <p class="section-subtitle">What our clients say about us</p>
-        </div>
-        <div class="testimonials-slider" id="testimonialsSlider">
-          <div class="testimonial-card active">
-            <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
-            <p class="testimonial-text">"Veekode transformed our online presence completely. The team was professional, creative, and delivered beyond our expectations."</p>
-            <div class="testimonial-author">
-              <div class="author-avatar">DY</div>
-              <div class="author-info">
-                <div class="author-name">Durgesh Yadav</div>
-                <div class="author-position">Director, Pareesan Service Pvt Ltd</div>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-card">
-            <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
-            <p class="testimonial-text">"Working with Veekode was a game-changer for our business. They understood our vision and brought it to life perfectly."</p>
-            <div class="testimonial-author">
-              <div class="author-avatar">AP</div>
-              <div class="author-info">
-                <div class="author-name">Avinash Prasad</div>
-                <div class="author-position">Founder, ticketadda</div>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-card">
-            <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
-            <p class="testimonial-text">"Exceptional quality and attention to detail. The Veekode team delivered a stunning website that our customers love."</p>
-            <div class="testimonial-author">
-              <div class="author-avatar">AC</div>
-              <div class="author-info">
-                <div class="author-name">Aryan Chaukrhat</div>
-                <div class="author-position">Director, Prime Renovation</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="slider-dots" id="sliderDots">
-          <span class="dot active" data-slide="0"></span>
-          <span class="dot" data-slide="1"></span>
-          <span class="dot" data-slide="2"></span>
-        </div>
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Client Feedback</h2>
+        <p class="section-subtitle">What our clients say about us</p>
       </div>
-    </section>
-
-    <section id="contact" class="cta">
-      <div class="container">
-        <div class="cta-content">
-          <h2 class="cta-title">Got a project in mind?</h2>
-          <p class="cta-subtitle">Let's create something amazing together</p>
-          <div class="cta-buttons">
-            <a href="mailto:vikas@ticketadda.in" class="btn btn-primary">Let's Talk</a>
-            <a href="https://wa.me/9871168736" class="btn btn-secondary" target="_blank">WhatsApp</a>
+      <div class="testimonials-slider" id="testimonialsSlider">
+        <div class="testimonial-card active">
+          <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial-text">"Veekode transformed our online presence completely. The team was professional,
+            creative, and delivered beyond our expectations."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">DY</div>
+            <div class="author-info">
+              <div class="author-name">Durgesh Yadav</div>
+              <div class="author-position">Director, Pareesan Service Pvt Ltd</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial-text">"Working with Veekode was a game-changer for our business. They understood our
+            vision and brought it to life perfectly."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">AP</div>
+            <div class="author-info">
+              <div class="author-name">Avinash Prasad</div>
+              <div class="author-position">Co-Founder, TicketAdda.in</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial-text">"Exceptional quality and attention to detail. The Veekode team delivered a
+            stunning website that our customers love."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">AC</div>
+            <div class="author-info">
+              <div class="author-name">Aryan Chaukrhat</div>
+              <div class="author-position">Director, Prime Renovation</div>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+      <div class="slider-dots" id="sliderDots">
+        <span class="dot active" data-slide="0"></span>
+        <span class="dot" data-slide="1"></span>
+        <span class="dot" data-slide="2"></span>
+      </div>
+    </div>
+  </section>
 
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-grid">
-          <div class="footer-col">
-            <div class="footer-logo"><img class="img-logo" src="logo-removebg-preview.png" alt=""></div>
-            <p class="footer-tagline">Crafting Digital Experiences</p>
-          </div>
-          <div class="footer-col">
-            <h4>Quick Links</h4>
-            <ul class="footer-links">
-              <li><a href="#home">Home</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#work">Portfolio</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>Connect</h4>
-            <div class="social-links">
-              <a href="#" aria-label="LinkedIn" target="_blank">
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                </svg>
-              </a>
-              <a href="#" aria-label="Instagram" target="_blank">
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM12 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                </svg>
-              </a>
-              <a href="#" aria-label="Behance" target="_blank">
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M22 7h-7v-2h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14h-8.027c.13 3.211 3.483 3.312 4.588 2.029h3.168zm-7.686-4h4.965c-.105-1.547-1.136-2.219-2.477-2.219-1.466 0-2.277.768-2.488 2.219zm-9.574 6.988h-6.466v-14.967h6.953c5.476.081 5.58 5.444 2.72 6.906 3.461 1.26 3.577 8.061-3.207 8.061zm-3.466-8.988h3.584c2.508 0 2.906-3-.312-3h-3.272v3zm3.391 3h-3.391v3.016h3.341c3.055 0 2.868-3.016.05-3.016z"/>
-                </svg>
-              </a>
-              <a href="#" aria-label="GitHub" target="_blank">
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <p>&copy; 2025 Veekode. All rights reserved.</p>
+  <section id="contact" class="cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title">Got a project in mind?</h2>
+        <p class="cta-subtitle">Let's create something amazing together</p>
+        <div class="cta-buttons">
+          <a href="mailto:vikas@ticketadda.in" class="btn btn-primary">Let's Talk</a>
+          <a href="https://wa.me/9871168736" class="btn btn-secondary" target="_blank">WhatsApp</a>
         </div>
       </div>
-    </footer>
+    </div>
+  </section>
 
-    <script type="module" src="script.js"></script>
-  </body>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo"><img class="img-logo" src="logo-removebg-preview.png" alt=""></div>
+          <p class="footer-tagline">Crafting Digital Experiences</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#work">Portfolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <div class="social-links">
+            <a href="#" aria-label="LinkedIn" target="_blank">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/veekode.in?igsh=Y3BzeGNqeGV3bTdh" aria-label="Instagram" target="_blank">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM12 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+              </svg>
+            </a>
+            <!-- <a href="#" aria-label="Behance" target="_blank">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M22 7h-7v-2h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14h-8.027c.13 3.211 3.483 3.312 4.588 2.029h3.168zm-7.686-4h4.965c-.105-1.547-1.136-2.219-2.477-2.219-1.466 0-2.277.768-2.488 2.219zm-9.574 6.988h-6.466v-14.967h6.953c5.476.081 5.58 5.444 2.72 6.906 3.461 1.26 3.577 8.061-3.207 8.061zm-3.466-8.988h3.584c2.508 0 2.906-3-.312-3h-3.272v3zm3.391 3h-3.391v3.016h3.341c3.055 0 2.868-3.016.05-3.016z" />
+              </svg>
+            </a>
+            <a href="#" aria-label="GitHub" target="_blank">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+              </svg> -->
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Veekode. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+
 </html>
