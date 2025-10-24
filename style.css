@@ -140,12 +140,19 @@ body {
   margin: 0 auto;
 }
 
-.logo {
-  font-size: 26px;
-  font-weight: 800;
-  color: var(--primary-color);
+.navbar-logo-link {
+  display: flex; /* To center the image if it's smaller than its container */
+  align-items: center;
   text-decoration: none;
-  letter-spacing: -0.5px;
+}
+
+.img-logo {
+  height: 60px; /* Adjust as needed */
+  transition: transform 0.3s ease;
+}
+
+.img-logo:hover {
+  transform: scale(1.05);
 }
 
 .btn-cta {
@@ -622,7 +629,7 @@ body {
 
 .portfolio-image {
   height: 280px;
-  position: relaabtive;
+  position: relative;
   overflow: hidden;
   transition: all 0.4s ease;
 }
@@ -920,6 +927,140 @@ body {
   font-size: 14px;
 }
 
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.contact-modal {
+  background: var(--bg-secondary);
+  padding: 40px;
+  border-radius: 24px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  position: relative;
+  width: 90%;
+  max-width: 500px;
+  transform: translateY(-20px);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.modal-overlay.active .contact-modal {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 32px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.modal-close:hover {
+  color: var(--primary-color);
+}
+
+.modal-title {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+  text-align: center;
+}
+
+.modal-subtitle {
+  font-size: 18px;
+  color: var(--text-secondary);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.modal-form .form-group {
+  margin-bottom: 20px;
+}
+
+.modal-form label {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.modal-form input[type="text"],
+.modal-form input[type="tel"],
+.modal-form input[type="email"],
+.modal-form textarea {
+  width: 100%;
+  padding: 14px 20px;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  font-size: 16px;
+  color: var(--text-primary);
+  background: var(--bg-primary);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.modal-form input[type="text"]:focus,
+.modal-form input[type="tel"]:focus,
+.modal-form input[type="email"]:focus,
+.modal-form textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.modal-submit-btn {
+  width: 100%;
+  padding: 16px 24px;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+.modal-submit-btn:hover {
+  background: #333333;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.form-message {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 15px;
+  color: var(--text-secondary);
+}
+
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -1108,7 +1249,16 @@ body {
     width: var(--team-member-size);
     height: var(--team-member-size);
   }
+
+  .contact-modal {
+    padding: 30px 20px;
+  }
+
+  .modal-title {
+    font-size: 28px;
+  }
+
+  .modal-subtitle {
+    font-size: 16px;
+  }
 }
- .img-logo{
-  height: 60px;
- }

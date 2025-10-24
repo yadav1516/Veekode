@@ -1,3 +1,4 @@
+// --- Navbar scroll ---
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 50) {
@@ -7,6 +8,7 @@ window.addEventListener('scroll', () => {
     }
   });
   
+  // --- Testimonial slider ---
   const testimonialSlider = document.getElementById('testimonialsSlider');
   const testimonialCards = testimonialSlider.querySelectorAll('.testimonial-card');
   const dots = document.querySelectorAll('.dot');
@@ -15,7 +17,6 @@ window.addEventListener('scroll', () => {
   function showSlide(index) {
     testimonialCards.forEach(card => card.classList.remove('active'));
     dots.forEach(dot => dot.classList.remove('active'));
-  
     testimonialCards[index].classList.add('active');
     dots[index].classList.add('active');
   }
@@ -32,25 +33,20 @@ window.addEventListener('scroll', () => {
     showSlide(currentSlide);
   }, 5000);
   
+  // --- Smooth scroll for anchors ---
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
       const target = document.querySelector(this.getAttribute('href'));
       if (target) {
         const offsetTop = target.offsetTop - 70;
-        window.scrollTo({
-          top: offsetTop,
-          behavior: 'smooth'
-        });
+        window.scrollTo({ top: offsetTop, behavior: 'smooth' });
       }
     });
   });
   
-  const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -100px 0px'
-  };
-  
+  // --- Intersection observer animations ---
+  const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -100px 0px' };
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -60,7 +56,6 @@ window.addEventListener('scroll', () => {
     });
   }, observerOptions);
   
-  // Updated observer to target the new team member cards
   document.querySelectorAll('.service-card, .portfolio-item, .process-step, .team-member-float-card').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(30px)';
@@ -68,10 +63,107 @@ window.addEventListener('scroll', () => {
     observer.observe(el);
   });
   
+  // --- Sidebar active links ---
   document.querySelectorAll('.sidebar-link').forEach(link => {
     link.addEventListener('click', function(e) {
       document.querySelectorAll('.sidebar-link').forEach(l => l.classList.remove('active'));
       this.classList.add('active');
     });
   });
+  
+  // --- Contact Modal + Form (iframe method) ---
+  const contactModalOverlay = document.getElementById('contactModalOverlay');
+  const openContactModalBtns = document.querySelectorAll('.open-contact-modal');
+  const closeModalBtn = document.getElementById('closeModalBtn');
+  const contactForm = document.getElementById('contactForm');
+  const formMessage = document.getElementById('formMessage');
+  const iframe = document.getElementById('hidden_iframe');
+  
+  function openModal() {
+    contactModalOverlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+  
+  function closeModal() {
+    contactModalOverlay.classList.remove('active');
+    document.body.style.overflow = '';
+    formMessage.textContent = '';
+    contactForm.reset();
+  }
+  
+  openContactModalBtns.forEach(btn => {
+    btn.addEventListener('click', e => { e.preventDefault(); openModal(); });
+  });
+  
+  closeModalBtn.addEventListener('click', closeModal);
+  contactModalOverlay.addEventListener('click', e => { if(e.target === contactModalOverlay) closeModal(); });
+  document.addEventListener('keydown', e => { if(e.key === 'Escape') closeModal(); });
+  
+  // --- Form submission via hidden iframe ---
+  contactForm.addEventListener('submit', () => {
+    formMessage.textContent = 'Sending...';
+    contactForm.querySelector('button[type="submit"]').disabled = true;
+  });
+  
+  iframe.addEventListener('load', () => {
+    setTimeout(() => {
+      formMessage.textContent = 'Thanks! We got your message ✅';
+      contactForm.reset();
+      contactForm.querySelector('button[type="submit"]').disabled = false;
+      setTimeout(() => contactModalOverlay.style.display = 'none', 700);
+    }, 300);
+  });
+  
+
+  (function() {
+    const contactModalOverlay = document.getElementById('contactModalOverlay');
+    const openContactModalBtns = document.querySelectorAll('.open-contact-modal');
+    const closeModalBtn = document.getElementById('closeModalBtn');
+    const contactForm = document.getElementById('contactForm');
+    const formMessage = document.getElementById('formMessage');
+    const iframe = document.getElementById('hidden_iframe');
+    const submitBtn = contactForm.querySelector('button[type="submit"]');
+  
+    // Open modal
+    function openModal() {
+      contactModalOverlay.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+  
+    // Close modal
+    function closeModal() {
+      contactModalOverlay.style.display = 'none';
+      document.body.style.overflow = '';
+      formMessage.textContent = '';
+      contactForm.reset();
+      submitBtn.disabled = false;
+    }
+  
+    openContactModalBtns.forEach(btn => btn.addEventListener('click', e => {
+      e.preventDefault(); openModal();
+    }));
+  
+    closeModalBtn.addEventListener('click', closeModal);
+  
+    contactModalOverlay.addEventListener('click', e => {
+      if (e.target === contactModalOverlay) closeModal();
+    });
+  
+    document.addEventListener('keydown', e => { if(e.key === 'Escape') closeModal(); });
+  
+    // Form submit via iframe
+    contactForm.addEventListener('submit', () => {
+      formMessage.textContent = 'Sending...';
+      submitBtn.disabled = true;
+    });
+  
+    iframe.addEventListener('load', () => {
+      setTimeout(() => {
+        formMessage.textContent = 'Thanks! We got your message ✅';
+        contactForm.reset();
+        submitBtn.disabled = false;
+        setTimeout(() => contactModalOverlay.style.display = 'none', 700);
+      }, 300);
+    });
+  })();
   
