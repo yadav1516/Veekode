@@ -18,7 +18,7 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacMacSystemFont, 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacMacSystemFont, 'Helvetica Neue', 'Arial', sans-serif;
   color: var(--text-primary);
   background: var(--bg-primary);
   line-height: 1.6;
@@ -123,6 +123,9 @@ body {
   background: transparent;
   padding: 16px 30px;
   transition: background 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .navbar.scrolled {
@@ -135,8 +138,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1400px;
-  margin: 0 auto;
+  /* max-width: 1400px;
+  margin: 0 auto; */
+  width: 100%;
 }
 
 .navbar-logo-link {
@@ -196,7 +200,8 @@ body {
 .title-circle {
   color: var(--accent-color);
   display: inline-block;
-  font-size: 100px;
+  font-size: ```css
+100px;
   vertical-align: middle;
   margin: 0 8px;
 }
@@ -1057,6 +1062,108 @@ body {
   margin-top: 20px;
   font-size: 15px;
   color: var(--text-secondary);
+}
+
+/* Mobile Navigation Menu Styles */
+.mobile-nav-menu {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .mobile-nav-menu {
+    display: block;
+  }
+
+  .nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .btn-cta {
+    margin: 0 auto; /* Center the button */
+  }
+
+  .mobile-nav-menu .hamburger-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px; /* बटन की चौड़ाई */
+    height: 24px; /* बटन की ऊंचाई */
+    padding: 0;
+    position: relative;
+    z-index: 20; /* यह सुनिश्चित करता है कि यह मेनू के ऊपर रहे */
+  }
+
+  .hamburger-btn .bar {
+    height: 3px; /* डंडियों की मोटाई */
+    width: 100%;
+    background-color: var(--text-primary);
+    border-radius: 2px;
+    /* यह है ट्रांज़िशन! */
+    transition: all 0.3s ease-in-out;
+    transform-origin: center;
+  }
+
+  /* --- 'X' में बदलना --- */
+
+  /* बीच वाली डंडी गायब हो जाएगी */
+  .hamburger-btn.active .bar-mid {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  /* ऊपर वाली डंडी घूमेगी */
+  .hamburger-btn.active .bar-top {
+    /* इसे 10.5px नीचे लाएं और 45 डिग्री घुमाएं */
+    transform: translateY(10.5px) rotate(45deg);
+  }
+
+  /* नीचे वाली डंडी घूमेगी */
+  .hamburger-btn.active .bar-bot {
+    /* इसे 10.5px ऊपर ले जाएं और -45 डिग्री घुमाएं */
+    transform: translateY(-10.5px) rotate(-45deg);
+  }
+  .mobile-nav-menu .mobile-nav-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: var(--bg-secondary);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    padding: 10px 15px;
+    z-index: 10;
+  }
+
+  .mobile-nav-menu .mobile-nav-links a {
+  color: var(--text-primary);
+  text-decoration: none;
+  padding: 12px 18px; /* Thodi padding badha di hai */
+  display: block;
+  transition: background 0.3s ease, color 0.3s ease; /* color transition add kiya */
+  
+  /* Yeh styles add kiye hain */
+  font-weight: 600; /* Ise semi-bold kar diya */
+  font-size: 16px;  /* Font size set kar diya */
+  letter-spacing: 0.3px; /* Button jaisi spacing */
+  border-radius: 8px; /* Hover par accha dikhega */
+}
+
+.mobile-nav-menu .mobile-nav-links a:hover {
+  background: var(--bg-primary);
+  color: var(--primary-color); /* Hover par text color bhi badlega */
+}
+
+  .mobile-nav-menu .mobile-nav-links.active {
+    display: flex;
+  }
 }
 
 
