@@ -1109,3 +1109,6 @@ body {
     height: var(--team-member-size);
   }
 }
+ .img-logo{
+  height: 60px;
+ }
